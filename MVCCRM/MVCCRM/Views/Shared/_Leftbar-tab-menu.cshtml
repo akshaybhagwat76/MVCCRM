@@ -1,0 +1,344 @@
+﻿<div class="leftbar-tab-menu">
+    <div class="main-icon-menu slimscroll-menu">
+        <a href="@Url.Action("Index", "Dashboard")" class="logo logo-metrica d-block text-center">
+            <span>
+                <img src="~/images/logo-sm.png" alt="logo-small" class="logo-sm">
+            </span>
+        </a>
+        <nav class="nav">
+            <a href="#MetricaDashboard" class="nav-link" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Dashboard">
+                <i data-feather="home" class="align-self-center menu-icon icon-dual"></i>
+            </a><!--end MetricaDashboards-->
+
+            <a href="#MetricaApps" class="nav-link" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Apps">
+                <i data-feather="grid" class="align-self-center menu-icon icon-dual"></i>
+            </a><!--end MetricaApps-->
+
+            <a href="#MetricaUikit" class="nav-link" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="UI Kit">
+                <i data-feather="package" class="align-self-center menu-icon icon-dual"></i>
+            </a><!--end MetricaUikit-->
+
+            <a href="#MetricaPages" class="nav-link" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Pages">
+                <i data-feather="copy" class="align-self-center menu-icon icon-dual"></i>
+            </a><!--end MetricaPages-->
+
+            <a href="#MetricaAuthentication" class="nav-link" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Authentication">
+                <i data-feather="lock" class="align-self-center menu-icon icon-dual"></i>
+            </a> <!--end MetricaAuthentication-->
+
+        </nav><!--end nav-->
+        <div class="pro-metrica-end">
+            <a href="" class="help" data-toggle="tooltip-custom" data-placement="right" data-trigger="hover" title="" data-original-title="Chat">
+                <i data-feather="message-circle" class="align-self-center menu-icon icon-md icon-dual mb-4"></i>
+            </a>
+            <a href="" class="profile">
+                <img src="~/images/users/user-4.jpg" alt="profile-user" class="rounded-circle thumb-sm">
+            </a>
+        </div>
+    </div><!--end main-icon-menu-->
+
+    <div class="main-menu-inner">
+        <!-- LOGO -->
+        <div class="topbar-left">
+            <a href="@Url.Action("Index", "Dashboard")" class="logo">
+                <span>
+                    <img src="~/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
+                    <img src="~/images/logo.png" alt="logo-large" class="logo-lg logo-light">
+                </span>
+            </a>
+        </div>
+        <!--end logo-->
+        <div class="menu-body slimscroll">
+            <div id="MetricaDashboard" class="main-icon-menu-pane">
+                <div class="title-box">
+                    <h6 class="menu-title">Dashboard</h6>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Analytics")">Analytics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Crypto")">Crypto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "CRM")">CRM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Project")">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Ecommerces")">Ecommerce</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Helpdesk")">Helpdesk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Hospital")">Hospital</a></li>
+                </ul>
+            </div><!-- end Dashboards -->
+
+            <div id="MetricaApps" class="main-icon-menu-pane">
+                <div class="title-box">
+                    <h6 class="menu-title">Apps</h6>
+                </div>
+                <ul class="nav metismenu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><span class="w-100">Analytics</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("customer", "analytics")">Customers</a></li>
+                            <li><a href="@Url.Action("reports", "analytics")">Reports</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><span class="w-100">Crypto</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("exchange", "crypto")">Exchange</a></li>
+                            <li><a href="@Url.Action("wallet", "crypto")">Wallet</a></li>
+                            <li><a href="@Url.Action("news", "crypto")">Crypto News</a></li>
+                            <li><a href="@Url.Action("ico", "crypto")">ICO List</a></li>
+                            <li><a href="@Url.Action("settings", "crypto")">settings</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><span class="w-100">CRM</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("contacts","crm")">Contacts</a></li>
+                            <li><a href="@Url.Action("opportunities","crm")">Opportunities</a></li>
+                            <li><a href="@Url.Action("leads","crm")">Leads</a></li>
+                            <li><a href="@Url.Action("customers","crm")">Customers</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><span class="w-100">Projects</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("clients", "Project")">Clients</a></li>
+                            <li><a href="@Url.Action("team", "Project")">Team</a></li>
+                            <li><a href="@Url.Action("project", "Project")">Project</a></li>
+                            <li><a href="@Url.Action("task", "Project")">Task</a></li>
+                            <li><a href="@Url.Action("Kanban", "Project")">Kanban Board</a></li>
+                            <li><a href="@Url.Action("chat", "Project")">Chat</a></li>
+                            <li><a href="@Url.Action("users", "Project")">Users</a></li>
+                            <li><a href="@Url.Action("Project_create", "Project")">Project Create</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><span class="w-100">Ecommerce</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("products", "Ecommerces")">Products</a></li>
+                            <li><a href="@Url.Action("ProductList", "Ecommerces")">Product List</a></li>
+                            <li><a href="@Url.Action("ProductDetails", "Ecommerces")">Product Detail</a></li>
+                            <li><a href="@Url.Action("cart", "Ecommerces")">Cart</a></li>
+                            <li><a href="@Url.Action("checkout", "Ecommerces")">Checkout</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><span class="w-100">Helpdesk</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("Tickets", "helpdesk")">Tickets</a></li>
+                            <li><a href="@Url.Action("reports", "helpdesk")">Reports</a></li>
+                            <li><a href="@Url.Action("agents", "helpdesk")">Agents</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><span class="w-100">Hospital</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li>
+                                <a href="javascript:void(0);">Appointments <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="@Url.Action("DoctorSchedule", "Hospital")">Dr. Shedule</a></li>
+                                    <li><a href="@Url.Action("AllAppointments", "Hospital")">All Appointments</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Doctors <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="@Url.Action("AllDoctors", "Hospital")">All Doctors</a></li>
+                                    <li><a href="@Url.Action("AddDoctor", "Hospital")">Add Doctor</a></li>
+                                    <li><a href="@Url.Action("DoctorEdit", "Hospital")">Doctor Edit</a></li>
+                                    <li><a href="@Url.Action("DoctorProfile", "Hospital")">Doctor Profile</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Patients <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="@Url.Action("AllPatients", "Hospital")">All Patients</a></li>
+                                    <li><a href="@Url.Action("AddPatient", "Hospital")">Add Patient</a></li>
+                                    <li><a href="@Url.Action("PatientEdit", "Hospital")">Patient Edit</a></li>
+                                    <li><a href="@Url.Action("PatientProfile", "Hospital")">Patient Profile</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Payments <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="@Url.Action("AllPayments", "Hospital")">All Payments</a></li>
+                                    <li><a href="@Url.Action("PaymentInvoice", "Hospital")">Payment Invoice</a></li>
+                                    <li><a href="@Url.Action("CashlessPayments", "Hospital")">Cashless Payments</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Staff <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="@Url.Action("AllStaff", "Hospital")">All Staff</a></li>
+                                    <li><a href="@Url.Action("AddMember", "Hospital")">Add Member</a></li>
+                                    <li><a href="@Url.Action("EditMember", "Hospital")">Edit Member</a></li>
+                                    <li><a href="@Url.Action("MemberProfile", "Hospital")">Member Profile</a></li>
+                                    <li><a href="@Url.Action("StaffSalary", "Hospital")">Staff Salary</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">General <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="@Url.Action("RoomAllotments", "Hospital")">Room Allotments</a></li>
+                                    <li><a href="@Url.Action("ExpensesReport", "Hospital")">Expenses Report</a></li>
+                                    <li><a href="@Url.Action("Departments", "Hospital")">Departments</a></li>
+                                    <li><a href="@Url.Action("InsuranceCo", "Hospital")">Insurance Co.</a></li>
+                                    <li><a href="@Url.Action("Events", "Hospital")">Events</a></li>
+                                    <li><a href="@Url.Action("Leaves", "Hospital")">Leaves</a></li>
+                                    <li><a href="@Url.Action("Holidays", "Hospital")">Holidays</a></li>
+                                    <li><a href="@Url.Action("Attendance", "Hospital")">Attendance</a></li>
+                                    <li><a href="@Url.Action("Chat", "Hospital")">Chat</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><span class="w-100">Email</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("inbox", "email")">Inbox</a></li>
+                            <li><a href="@Url.Action("ReadEmail", "email")">Read Email</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("chat", "Home")">Chat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("ContactList", "Home")">Contact List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Calendar", "Home")">Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Invoice", "Home")">Invoice</a></li>
+                </ul>
+            </div><!-- end Crypto -->
+
+            <div id="MetricaUikit" class="main-icon-menu-pane">
+                <div class="title-box">
+                    <h6 class="menu-title">UI Kit</h6>
+                </div>
+                <ul class="nav metismenu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="w-100">UI Elements</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("bootstrap", "UI")">Bootstrap</a></li>
+                            <li><a href="@Url.Action("animation", "UI")">Animation</a></li>
+                            <li><a href="@Url.Action("avatar", "UI")">Avatar</a></li>
+                            <li><a href="@Url.Action("clipboard", "UI")">Clip Board</a></li>
+                            <li><a href="@Url.Action("FileManager", "UI")">File Manager</a></li>
+                            <li><a href="@Url.Action("Ribbons", "UI")">Ribbons</a></li>
+                            <li><a href="@Url.Action("Dragula", "UI")">Dragula</a></li>
+                            <li><a href="@Url.Action("Check", "UI")">Check & Radio</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="w-100">Advanced UI</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("Rangeslider", "AdvanceUI")">Range Slider</a></li>
+                            <li><a href="@Url.Action("SweetAlerts", "AdvanceUI")">Sweet Alerts</a></li>
+                            <li><a href="@Url.Action("NestableList", "AdvanceUI")">Nestable List</a></li>
+                            <li><a href="@Url.Action("Ratings", "AdvanceUI")">Ratings</a></li>
+                            <li><a href="@Url.Action("Highlight", "AdvanceUI")">Highlight</a></li>
+                            <li><a href="@Url.Action("SessionTimeout", "AdvanceUI")">Session Timeout</a></li>
+                            <li><a href="@Url.Action("IdleTimer", "AdvanceUI")">Idle Timer</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="w-100">Forms</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("BasicElements","Forms")">Basic Elements</a></li>
+                            <li><a href="@Url.Action("AdvanceElements","Forms")">Advance Elements</a></li>
+                            <li><a href="@Url.Action("Validation","Forms")">Validation</a></li>
+                            <li><a href="@Url.Action("Wizard","Forms")">Wizard</a></li>
+                            <li><a href="@Url.Action("Editors","Forms")">Editors</a></li>
+                            <li><a href="@Url.Action("Repeater","Forms")">Repeater</a></li>
+                            <li><a href="@Url.Action("XEditable","Forms")">X Editable</a></li>
+                            <li><a href="@Url.Action("FileUpload","Forms")">File Upload</a></li>
+                            <li><a href="@Url.Action("ImageCrop", "Forms")">Image Crop</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="w-100">Charts</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("Apex", "Charts")">Apex</a></li>
+                            <li><a href="@Url.Action("Morris", "Charts")">Morris</a></li>
+                            <li><a href="@Url.Action("Chartist", "Charts")">Chartist</a></li>
+                            <li><a href="@Url.Action("Flot", "Charts")">Flot</a></li>
+                            <li><a href="@Url.Action("Peity", "Charts")">Peity</a></li>
+                            <li><a href="@Url.Action("Chartjs", "Charts")">Chartjs</a></li>
+                            <li><a href="@Url.Action("Sparkline", "Charts")">Sparkline</a></li>
+                            <li><a href="@Url.Action("JqueryKnob", "Charts")">Jquery Knob</a></li>
+                            <li><a href="@Url.Action("JustGage", "Charts")">JustGage</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="w-100">Tables</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("Basic", "Tables")">Basic</a></li>
+                            <li><a href="@Url.Action("Datatables", "Tables")">Datatables</a></li>
+                            <li><a href="@Url.Action("Responsive", "Tables")">Responsive</a></li>
+                            <li><a href="@Url.Action("Footable", "Tables")">Footable</a></li>
+                            <li><a href="@Url.Action("Jsgrid", "Tables")">Jsgrid</a></li>
+                            <li><a href="@Url.Action("Dragger", "Tables")">Dragger</a></li>
+                            <li><a href="@Url.Action("Editable", "Tables")">Editable</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="w-100">Icons</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("MaterialDesign", "Icons")">Material Design</a></li>
+                            <li><a href="@Url.Action("Dripicons", "Icons")">Dripicons</a></li>
+                            <li><a href="@Url.Action("Fontawesome", "Icons")">Font awesome</a></li>
+                            <li><a href="@Url.Action("Themify", "Icons")">Themify</a></li>
+                            <li><a href="@Url.Action("Feather", "Icons")">Feather</a></li>
+                            <li><a href="@Url.Action("Typicons", "Icons")">Typicons</a></li>
+                            <li><a href="@Url.Action("Emoji", "Icons")">Emoji <i class="em em-ok_hand"></i></a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="w-100">Maps</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("GoogleMaps", "Maps")">Google Maps</a></li>
+                            <li><a href="@Url.Action("leaflet", "Maps")">Leaflet Maps</a></li>
+                            <li><a href="@Url.Action("vector", "Maps")">Vector Maps</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="w-100">Email Templates</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="@Url.Action("BasicActionEmail", "EmailTemplates")">Basic Action Email</a></li>
+                            <li><a href="@Url.Action("AlertEmail", "EmailTemplates")">Alert Email</a></li>
+                            <li><a href="@Url.Action("BillingEmail", "EmailTemplates")">Billing Email</a></li>
+                        </ul>
+                    </li><!--end nav-item-->
+                </ul><!--end nav-->
+            </div><!-- end Others -->
+
+            <div id="MetricaPages" class="main-icon-menu-pane">
+                <div class="title-box">
+                    <h6 class="menu-title">Pages</h6>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Profile", "Pages")">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Tour", "Pages")">Tour</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Timeline", "Pages")">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Treeview", "Pages")">Treeview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Starter", "Pages")">Starter Page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Pricing", "Pages")">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Blogs", "Pages")">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("faq", "Pages")">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Gallery", "Pages")">Gallery</a></li>
+                </ul>
+            </div><!-- end Pages -->
+            <div id="MetricaAuthentication" class="main-icon-menu-pane">
+                <div class="title-box">
+                    <h6 class="menu-title">Authentication</h6>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Authentication")">Log in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Loginalt", "Authentication")">Log in alt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Register", "Authentication")">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Registeralt", "Authentication")">Register-alt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("RePassword", "Authentication")">Re-Password</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("RePasswordalt", "Authentication")">Re-Password-alt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Lockscreen", "Authentication")">Lock Screen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Lockscreenalt", "Authentication")">Lock Screen-alt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Error404", "Authentication")">Error 404</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("alt404", "Authentication")">Error 404-alt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Error500", "Authentication")">Error 500</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("alt500", "Authentication")">Error 500-alt</a></li>
+                </ul>
+            </div><!-- end Authentication-->
+        </div><!--end menu-body-->
+    </div><!-- end main-menu-inner-->
+</div>
+

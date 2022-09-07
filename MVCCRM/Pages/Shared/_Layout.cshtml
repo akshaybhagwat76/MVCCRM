@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Metrica - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/images/favicon.ico">
+    <link href="~/css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/icons.min.css" rel="stylesheet" />
+    <link href="~/css/metisMenu.min.css" rel="stylesheet" />
+    <link href="~/css/app.min.css" rel="stylesheet" />
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <!-- leftbar-tab-menu -->
+    @Html.Partial("_leftbar-tab-menu")
+    <!-- end leftbar-tab-menu-->
+    <!-- Top Bar Start -->
+    @Html.Partial("_top-bar")
+    <!-- Top Bar End -->
+
+    <div class="page-wrapper">
+        <!-- Page Content-->
+        <div class="page-content-tab">
+            <!-- main container -->
+            <div class="container-fluid">
+                @RenderBody()
+            </div>
+            <!-- end container -->
+            <!-- right bar -->
+            @Html.Partial("_right-bar")
+            <!-- end right bar -->
+            <!--footer-->
+            @Html.Partial("_footer")
+            <!--end footer-->
+        </div>
+        <!-- end page content -->
+    </div>
+    
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/metismenu.min.js"></script>
+    <script src="~/Scripts/waves.js"></script>
+    <script src="~/Scripts/feather.min.js"></script>
+    <script src="~/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="~/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="~/Scripts/app.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
